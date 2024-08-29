@@ -51,6 +51,10 @@ nav ul li + li {
     padding-left: 17px;
 }
 
+h2, h3 {
+    margin-bottom: 0.5em;
+}
+
 main > header {
     padding-bottom: 51px;
 }
@@ -69,15 +73,24 @@ section {
     padding-bottom: 34px;
 }
 
-section > h2, section p {
+section > h2, section > p, section > section {
     margin-left: 17px;
     margin-right: 34px;
 }
 
+pre {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 section.about {
+    background-color: #DEDEDE;
+}
+
+section.quickstart {
     background-color: #EDEDED
 }
 
 section.download {
-    background-color: #DADADA;
+    background-color: #CDCDCD;
 }
