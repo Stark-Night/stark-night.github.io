@@ -74,7 +74,7 @@ section {
 }
 
 section > h2, section > p, section > section {
-    margin-left: 17px;
+    margin-left: 34px;
     margin-right: 34px;
 }
 
@@ -93,4 +93,11 @@ section.quickstart {
 
 section.download {
     background-color: #CDCDCD;
+}
+
+footer {
+    background-color: #494949;
+    color: #AAAAAA;
+    padding: 34px 17px 17px;
+    font-size: 0.875em;
 }
