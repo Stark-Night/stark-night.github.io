@@ -25,8 +25,40 @@ table {
 }
 /* end uniform */
 
+/* colors */
+:root {
+    --body-background: #FFFFFF;
+    --body-foreground: #000000;
+    --section-stripe-1: #CCE8F6;
+    --section-stripe-2: #FFFFFF;
+    --section-foreground-1: #000000;
+    --section-foreground-2: #000000;
+    --a-foreground-1: #4A5DA9;
+    --a-foreground-2: #4A5DA9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background: #151515;
+        --body-foreground: #A1A1A1;
+        --section-stripe-1: #6F86A6;
+        --section-stripe-2: #151515;
+        --section-foreground-1: #000000;
+        --section-foreground-2: #A1A1A1;
+        --a-foreground-1: #A5BBE0;
+        --a-foreground-2: #B8D5D0;
+    }
+}
+/* end colors */
+
 body {
     font-family: sans-serif;
+    color: var(--body-foreground);
+    background-color: var(--body-background);
+}
+
+a:link, a:visited {
+    color: var(--a-foreground-1);
 }
 
 nav {
@@ -84,15 +116,26 @@ pre {
 }
 
 section.about {
-    background-color: #DEDEDE;
+    color: var(--section-foreground-1);
+    background-color: var(--section-stripe-1);
+}
+
+section.about a {
+    color: var(--a-foreground-2);
 }
 
 section.quickstart {
-    background-color: #EDEDED
+    color: var(--section-foreground-2);
+    background-color: var(--section-stripe-2);
 }
 
 section.download {
-    background-color: #CDCDCD;
+    color: var(--section-foreground-1);
+    background-color: var(--section-stripe-1);
+}
+
+section.download a {
+    color: var(--a-foreground-2);
 }
 
 footer {
