@@ -52,7 +52,7 @@ table {
 /* end colors */
 
 body {
-    font-family: sans-serif;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: var(--body-foreground);
     background-color: var(--body-background);
 }
@@ -93,7 +93,7 @@ h2, h3 {
 }
 
 main > header {
-    padding-bottom: 51px;
+    padding-bottom: 3em;
 }
 
 main > header > h1, main > header > h2 {
@@ -106,18 +106,26 @@ main > header > h1 {
 }
 
 section {
-    padding-top: 17px;
-    padding-bottom: 34px;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
-section > h2, section > p, section > section {
+section > h2,
+section > h3,
+section > p,
+section > pre,
+section > section {
     margin-left: 34px;
     margin-right: 34px;
 }
 
 pre {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+p + h3 {
+    margin-top: 1em;
 }
 
 section.about {
