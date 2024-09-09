@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>awa5x Quickstart Tutorial</title>
+    <link rel="stylesheet" href="/awa5x/style-tutorial.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <a href="/awa5x/"><img src="/awa5x/media/logo.png" width="149" height="64" alt="awa5x logo"></a>
+        </div>
+
+        <h1>Quickstart awa5x Tutorial</h1>
+      </header>
+
+      <section class="toc">
+        <h2>Table of contents</h2>
+
+        <ol>
+          <li><a href="#download">Obtaining the awa5x suite</a></li>
+          <li><a href="#environment">Development environment</a></li>
+          <li><a href="#compiling">Compiling an awa5x program</a></li>
+          <li><a href="#execution">Executing the compiled program</a></li>
+        </ol>
+      </section>
+
+      <section class="download">
+        <h2 id="download">Obtaining the awa5x suite</h2>
+
+        <p>The <em>awa5x</em> suite of tools can be downloaded from the <a href="https://github.com/Stark-Night/awa5x/releases">GitHub repository</a>. Visit the homepage for more details.</p>
+        <p>The archive to download has the form: <code>awa5x-[VERSION]-tools-[PLATFORM]-[ARCH].zip</code>.</p>
+        <p>On Microsoft&reg; Windows&reg; systems, download the archive whose <code>[PLATFORM]</code> component is <i>windows</i>.</p>
+        <p>On POSIX&trade; and UNIX&reg;-like systems, download the archive whose <code>[PLATFORM]</code> component is <i>unix</i>.</p>
+        <p>If you have particular hardware, please ensure that <code>[ARCH]</code> matches your processor type.</p>
+
+        <p>Once you have downloaded the archive, create a directory and unpack the archive inside it. You might want to call the directory <code>awa5x</code> for simplicity. After unpacking, this directory should contain at least two programs to progress with this tutorial: <i>awa5</i> and <i>awa5c</i>.</p>
+      </section>
+
+      <section class="environment">
+        <h2 id="environment">Development environment</h2>
+
+        <p>Once you have downloaded the tools, you only need two more programs which are usually provided by your operating system: a text editor and a command-line terminal.</p>
+        <p>Usually systems come with a text editor already installed: it can be <i>Notepad</i>, <i>gedit</i> or <i>nano</i>; power users might have other editors installed like <i>Emacs</i>, <i>Vim</i> or <i>ed</i>.</p>
+        <p><i>awa5x</i> programs can be written using any editor, as long as the file is in <em>plain text</em>, usually indicated with the <code>txt</code> extension.</p>
+        <p>Command-line terminals are also usually already installed: on Windows&reg; it's recommended to use PowerShell; on other systems there might be multiple programs available with different names, but looking for a program called &ldquo;terminal&rdquo; or &ldquo;console&rdquo; will usually yield results.</p>
+        <p>More complex tools, like integrated development environments (IDE), can also provide their own built-in command-line terminal.</p>
+      </section>
+
+      <section class="compiling">
+        <h2 id="compiling">Compiling an awa5x program</h2>
+
+        <p>Create a folder for your programs. For example, it can be <code>C:\Users\MyUser\Desktop\awa5-programs</code> or <code>/home/myuser/awa5-programs</code>, just make sure you can reach it through its full path.</p>
+        <p>Inside your text editor, type the following (you can copy and paste it):</p>
+        <pre>awa
+awa awawa awawa awa awawawawawawawa
+awa awawa awawa awa awa awa awa awa awa awa awa
+awa awawa awawa awa awa awa awa awa awa awawa
+awa awawa awawa awa awa awa awa awa awa awa awa
+awawa awa awawa awa awa awa awa awawa awa awa
+awa awa awa awawa</pre>
+
+        <p>Save this file inside the folder you just created. The name is not important, but for simplicity let's call it <i>myprogram.txt</i>.</p>
+        <p>Open your terminal and navigate inside the folder with your awa5x tools. Let's say it's on your desktop, so you can enter it for example with the command:</p>
+        <pre>cd C:\Users\MyUser\Desktop\awa5x</pre>
+        <p>or</p>
+        <pre>cd /home/myuser/Desktop/awa5x</pre>
+        <p>according to your system.</p>
+
+        <p>Now, compile the program by executing the compiler tool:</p>
+        <pre>./awa5c C:\Users\MyUser\Desktop\awa5-programs\myprogram.txt > C:\Users\MyUser\Desktop\awa5-programs\myprogram.awa</pre>
+        <p>Make sure you give the proper paths to your file.</p>
+        <p>The name of <i>myprogram.awa</i> is once again not important, you are free to change it to anything you want.</p>
+      </section>
+
+      <section class="execution">
+        <h2 id="execution">Executing the compiled program</h2>
+
+        <p>Ensure the <i>myprogram.awa</i> file exists and its size is not zero bytes. You might want to check that you did everything correctly before moving on.</p>
+        <p>Now run this command in your terminal:</p>
+        <pre>./awa5 C:\Users\MyUser\Desktop\awa5-programs\myprogram.awa</pre>
+        <p>You should see the text <code>AWA</code> printed below the command you just executed.</p>
+      </section>
+
+      <footer>
+        <p>Copyright &copy; 2024 Stark Night</p>
+        <p>Queries, bug reports or other issues: <i>starknightawawa at gmail dot com</i></p>
+      </footer>
+    </main>
+  </body>
+</html>

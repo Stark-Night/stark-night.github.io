@@ -1,0 +1,96 @@
+/* uniform */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+/* end uniform */
+
+/* colors */
+:root {
+    --body-background: #FFFFFF;
+    --body-foreground: #000000;
+    --a-foreground-1: #4A5DA9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background: #151515;
+        --body-foreground: #A1A1A1;
+        --a-foreground-1: #A5BBE0;
+    }
+}
+/* end colors */
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--body-foreground);
+    background-color: var(--body-background);
+}
+
+main {
+    padding: 0 17px;
+}
+
+main > header {
+    padding-bottom: 3em;
+}
+
+section {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+a:link, a:visited {
+    color: var(--a-foreground-1);
+}
+
+div.logo {
+    padding: 1em 0;
+}
+
+main > header > h1 {
+    font-size: 2.5em;
+}
+
+h2, h3 {
+    margin-bottom: 0.5em;
+}
+
+p + h3 {
+    margin-top: 1em;
+}
+
+section > p {
+    padding: 0.25em 0;
+}
+
+pre {
+    padding: 1em 0;
+}
+
+footer {
+    background-color: #494949;
+    color: #AAAAAA;
+    padding: 34px 17px 17px;
+    font-size: 0.875em;
+}
