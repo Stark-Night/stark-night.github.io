@@ -65,6 +65,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1em;
     justify-content: space-between;
     align-items: center;
     padding: 1em 17px;
